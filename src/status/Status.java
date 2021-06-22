@@ -15,6 +15,8 @@ import java.util.Scanner;
  * change the code to use enums which avoids String input 
  * then print the status details. 
  * @author srinivsi date:June 22
+ * @modifiedBy : Bikranta Singha
+ * @modifiedDate : 22nd June, 2021
  */
 public class Status {
 
@@ -24,8 +26,8 @@ public class Status {
     public static void main(String[] args)
     {
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
+    System.out.println("Enter the user status code (0, 1, 2, 3)");
+    int code = in.nextInt();
     StausUser t= new StausUser();
     t.statusDetail(code); 
     }
